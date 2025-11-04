@@ -1,0 +1,67 @@
+#NameH1 {
+    position: fixed;
+    top: calc(var(--navbar-height, 396px) + 16px); 
+    left:25%;
+    transform: translateX(-50%);
+
+    color: #f0f0f0;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    z-index: 200; 
+    font-family: 'BBH Sans Bartle', Arial, sans-serif;
+}
+
+#SDH2 {
+    position: fixed;
+    top: calc(var(--navbar-height, 480px) + 16px); 
+    left:23%;
+    transform: translateX(-50%);
+
+    color: #f0f0f0;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0; 
+    z-index: 200; 
+    font-family: 'BBH Sans Bartle', Arial, sans-serif;
+}
+
+#SDH3 {
+    position: fixed;
+    top: calc(var(--navbar-height, 880px) + 16px); 
+    left:33%;
+    transform: translateX(-50%);
+
+    color: #f0f0f0;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0; 
+    z-index: 200; 
+    font-family: 'BBH Sans Bartle', Arial, sans-serif;
+}
+
+
+.profile-image {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #NameH1 {
+        font-size: 2rem;
+        top: calc(var(--navbar-height, 72px) + 12px);
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        right: 50px;
+    }
+}
