@@ -1,67 +1,105 @@
-#NameH1 {
-    position: fixed;
-    top: calc(var(--navbar-height, 396px) + 16px); 
-    left:25%;
-    transform: translateX(-50%);
+/* --- RESET + BASIS --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    color: #f0f0f0;
-    font-size: 3rem;
-    text-align: center;
-    margin: 0;
-    z-index: 200; 
-    font-family: 'BBH Sans Bartle', Arial, sans-serif;
+html, body {
+  height: 100%;
+  overflow: hidden; /* voorkomt scroll */
+  background-color: #0a0a0a; /* optioneel */
+}
+
+/* --- LAYOUT --- */
+.home {
+  display: flex;
+  flex-direction: row;       /* afbeelding links, tekst rechts */
+  align-items: center;       /* verticaal centreren */
+  justify-content: space-between;
+  height: 80vh;             /* precies één schermhoogte */
+  padding: 0 8vw;            /* zijkantruimte */
+  gap: 8vw;                  /* ruimte tussen image en tekst */
+}
+
+/* --- LINKERHELFT (afbeelding) --- */
+.home-media {
+  flex: 0 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Zorg dat de afbeelding altijd ROND is */
+.profile-image {
+  width: 800px;   /* schaalt met scherm */
+  aspect-ratio: 1 / 1;       /* houdt de vorm perfect vierkant */
+  border-radius: 50%;        /* maakt 'm rond */
+  object-fit: cover;         /* vult de cirkel netjes */
+  display: block;
+}
+
+/* --- RECHTERHELFT (tekst) --- */
+.home-text {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* maakt ruimte tussen boven- en onderkant */
+  align-items: flex-start;
+  height: 60vh;                   /* ruimte tussen H1/H2 en H3 */
+  color: azure;
+  font-family: "BBH Sans Bartle", sans-serif;
+  padding: 4vh 0;
+}
+
+/* --- TITELS --- */
+#NameH1 {
+  font-size: 4rem;
+  color: azure;
+  margin-bottom: 2rem; /* klein stukje tussen h1 en h2 */
 }
 
 #SDH2 {
-    position: fixed;
-    top: calc(var(--navbar-height, 480px) + 16px); 
-    left:23%;
-    transform: translateX(-50%);
-
-    color: #f0f0f0;
-    font-size: 2rem;
-    text-align: center;
-    margin: 0; 
-    z-index: 200; 
-    font-family: 'BBH Sans Bartle', Arial, sans-serif;
+  font-size: 3rem;
+  color: azure;
+  margin-bottom: 0; /* dicht bij h1 */
 }
 
 #SDH3 {
-    position: fixed;
-    top: calc(var(--navbar-height, 880px) + 16px); 
-    left:33%;
-    transform: translateX(-50%);
+  font-size: 3rem;
+  font-family: "BBH Sans Bogle", sans-serif;
+  color: azure;
+  align-self: flex-start;
+  margin-top: auto; /* duwt deze naar onderkant van .home-text */
+}
 
-    color: #f0f0f0;
-    font-size: 2rem;
+/* --- RESPONSIVE: voor kleinere schermen --- */
+@media (max-width: 900px) {
+  .home {
+    flex-direction: column; /* image boven, tekst onder */
+    height: auto;
+    overflow: auto; /* scroll alleen nodig op kleine schermen */
+    padding: 6vh 6vw;
+  }
+
+  .home-media {
+    order: 0;
+    width: 100%;
+  }
+
+  .profile-image {
+    width: min(60vw, 320px);
+  }
+
+  .home-text {
+    order: 1;
+    align-items: center;
     text-align: center;
-    margin: 0; 
-    z-index: 200; 
-    font-family: 'BBH Sans Bartle', Arial, sans-serif;
-}
+    height: auto;
+    gap: 1.2rem;
+  }
 
-
-.profile-image {
-    width: 700px;
-    height: 700px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    right: 200px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-@media (max-width: 768px) {
-    #NameH1 {
-        font-size: 2rem;
-        top: calc(var(--navbar-height, 72px) + 12px);
-    }
-    
-    .profile-image {
-        width: 200px;
-        height: 200px;
-        right: 50px;
-    }
+  #SDH3 {
+    margin-top: 2rem;
+  }
 }

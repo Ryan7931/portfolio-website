@@ -3,11 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>portfolio-website</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- Script to block pinch/double-tap and Ctrl/Cmd+wheel zooming -->
+    <script>
+      (function() {
+        // Prevent pinch zoom: cancel touch events with multiple touches
+        function preventMultiTouch(e) {
+          if (e.touches && e.touches.length > 1) {
+            e.preventDefault();
+          }
+        }
+
+        document.addEventListener('touchstart', preventMultiTouch, { passive: false });
+        document.addEventListener('touchmove', preventMultiTouch, { passive: false });
+
+        // Prevent double-tap to zoom
+        var lastTouchEnd = 0;
+        document.addEventListener('touchend', function(e) {
+          var now = Date.now();
+          if (now - lastTouchEnd <= 300) {
+            e.preventDefault();
+          }
+          lastTouchEnd = now;
+        }, { passive: false });
+
+        // Prevent pinch/gesture events on iOS Safari
+        document.addEventListener('gesturestart', function(e) {
+          e.preventDefault();
+        });
+
+        // Prevent Ctrl/Cmd + wheel zoom
+        window.addEventListener('wheel', function(e) {
+          if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+          }
+        }, { passive: false });
+      })();
+    </script>
   </body>
 </html>

@@ -1,9 +1,8 @@
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 2rem;
+  padding: 1rem 2rem;
   background: linear-gradient(90deg, #7F1BAD 0%, #2862EA 100%);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: 'BBH Sans Bogle', Arial, sans-serif;
@@ -14,18 +13,17 @@
 }
 
 .navbar-logo {
-  width: 56px;
-  height: 56px;
+  width: 156px;
+  height: 156px;
   border-radius: 50%;
   overflow: hidden;
-  height: 156px;
+  height: 250px;
   width: auto;
   display: inline-block;
   object-fit: contain;
   box-shadow: none;
-  border-radius: 0; /* remove circular mask */
+  border-radius: 0;
   flex: 1;
-  /* justify-content: center; */
 }
 
 .nav-links {
@@ -33,22 +31,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 4.5rem; /* increased spacing for larger buttons */
+  gap: 4.5rem; 
   align-items: center;
 }
 
 .navbar-link {
   text-decoration: none;
   color: #ffffff;
-  background: #7B7A7A; /* button base color */
+  background: #7B7A7A; 
   font-weight: 700;
-  font-size: 2rem; /* ~2x larger */
+  font-size: 3rem; 
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: background 0.25s ease, transform 0.15s ease;
-  padding: 1.1rem 2.5rem; /* larger clickable area */
-  border-radius: 20px; /* requested corner radius */
+  padding: 1.1rem 2.5rem; 
+  border-radius: 20px; 
   display: inline-block;
 }
 
@@ -69,7 +67,6 @@
   font-family: 'Arial', sans-serif;
 }
 
-/* Center links (make them same size as Contact button) */
 .nav-links {
   display: flex;
   list-style: none;
@@ -80,20 +77,19 @@
 }
 
 .nav-links li a {
-  /* match .navbar-link styles so all buttons are equally large */
   text-decoration: none;
   color: #ffffff;
-  background: #7B7A7A; /* button base color */
+  background: #7B7A7A;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: background 0.25s ease, transform 0.15s ease;
   padding: 1.1rem 2.5rem;
-  border-radius: 20px; /* requested corner radius */
+  border-radius: 20px; 
   display: inline-block;
-  font-family: 'BBH Sans Bogle', Arial, sans-serif; /* pages font */
+  font-family: 'BBH Sans Bogle', Arial, sans-serif; 
 }
 
 .nav-links li a:hover {
@@ -105,7 +101,6 @@
   transform: translateY(0);
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;
@@ -119,7 +114,7 @@
   
   .nav-links li a,
   .navbar-link {
-    font-size: 1rem; /* scale down on mobile */
+    font-size: 1rem; 
     padding: 0.55rem 1rem;
   }
 }
