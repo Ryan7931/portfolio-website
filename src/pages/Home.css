@@ -1,4 +1,3 @@
-/* --- RESET + BASIS --- */
 * {
   margin: 0;
   padding: 0;
@@ -7,22 +6,20 @@
 
 html, body {
   height: 100%;
-  overflow: hidden; /* voorkomt scroll */
-  background-color: #0a0a0a; /* optioneel */
+  overflow: hidden;
+  background-color: #0a0a0a;
 }
 
-/* --- LAYOUT --- */
 .home {
   display: flex;
-  flex-direction: row;       /* afbeelding links, tekst rechts */
-  align-items: center;       /* verticaal centreren */
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  height: 80vh;             /* precies één schermhoogte */
-  padding: 0 8vw;            /* zijkantruimte */
-  gap: 8vw;                  /* ruimte tussen image en tekst */
+  height: 80vh;
+  padding: 0 8vw;
+  gap: 8vw;
 }
 
-/* --- LINKERHELFT (afbeelding) --- */
 .home-media {
   flex: 0 1 45%;
   display: flex;
@@ -30,39 +27,36 @@ html, body {
   align-items: center;
 }
 
-/* Zorg dat de afbeelding altijd ROND is */
 .profile-image {
-  width: 800px;   /* schaalt met scherm */
-  aspect-ratio: 1 / 1;       /* houdt de vorm perfect vierkant */
-  border-radius: 50%;        /* maakt 'm rond */
-  object-fit: cover;         /* vult de cirkel netjes */
+  width: 800px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
   display: block;
 }
 
-/* --- RECHTERHELFT (tekst) --- */
 .home-text {
   flex: 1 1 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* maakt ruimte tussen boven- en onderkant */
+  justify-content: space-between;
   align-items: flex-start;
-  height: 60vh;                   /* ruimte tussen H1/H2 en H3 */
+  height: 60vh;
   color: azure;
   font-family: "BBH Sans Bartle", sans-serif;
   padding: 4vh 0;
 }
 
-/* --- TITELS --- */
 #NameH1 {
   font-size: 4rem;
   color: azure;
-  margin-bottom: 2rem; /* klein stukje tussen h1 en h2 */
+  margin-bottom: 2rem;
 }
 
 #SDH2 {
   font-size: 3rem;
   color: azure;
-  margin-bottom: 0; /* dicht bij h1 */
+  margin-bottom: 0;
 }
 
 #SDH3 {
@@ -70,15 +64,14 @@ html, body {
   font-family: "BBH Sans Bogle", sans-serif;
   color: azure;
   align-self: flex-start;
-  margin-top: auto; /* duwt deze naar onderkant van .home-text */
+  margin-top: auto;
 }
 
-/* --- RESPONSIVE: voor kleinere schermen --- */
 @media (max-width: 900px) {
   .home {
-    flex-direction: column; /* image boven, tekst onder */
+    flex-direction: column;
     height: auto;
-    overflow: auto; /* scroll alleen nodig op kleine schermen */
+    overflow: auto;
     padding: 6vh 6vw;
   }
 
