@@ -37,7 +37,6 @@ const Projects = () => {
 
       <header className="divider"></header>
 
-      {/* Tweede sectie */}
       <section className="projects-section">
         <h2 className="projects-title">Projecten ‘25 - ‘26</h2>
         <div className="projects-grid">
