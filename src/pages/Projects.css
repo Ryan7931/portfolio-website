@@ -1,5 +1,5 @@
 .projects-page {
-  background-color: #1e1e1e;
+  background-color: #484646;
   min-height: 100vh;
   color: white;
   font-family: "BBH Sans Bartle", sans-serif;
@@ -64,6 +64,7 @@
   background-color: #7d47f0;
   flex: 1 1 400px; 
   max-width: 500px;
+  min-height: 300px;
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
@@ -86,7 +87,7 @@
 }
 
 .project-desc {
-  font-size: 1rem;
+  font-size: 1.3rem;
   flex-grow: 1;
   margin-bottom: 1.5rem;
 }
