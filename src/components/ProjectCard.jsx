@@ -1,4 +1,6 @@
+// src/components/ProjectCard.jsx
 import '../pages/Projects.css';
+import { Link } from 'react-router-dom';
 
 const ProjectCard = () => {
   return (
@@ -8,13 +10,14 @@ const ProjectCard = () => {
         <h2 className="projects-title">Projecten ‘24 - ‘25</h2>
 
         <div className="projects-grid">
-
           <div className="project-card">
             <h3 className="project-title">Rocket Boost</h3>
             <p className="project-desc">
               Een game waar je met een rocket door obstakels vliegt
             </p>
-            <button className="details-btn">Details</button>
+            <Link to="/projects/rocket-boost">
+              <button className="details-btn">Details</button>
+            </Link>
           </div>
 
           <div className="project-card">
@@ -22,7 +25,9 @@ const ProjectCard = () => {
             <p className="project-desc">
               Mijn persoonlijke portfolio met React en animaties
             </p>
-            <button className="details-btn">Details</button>
+            <Link to="/projects/portfolio">
+              <button className="details-btn">Details</button>
+            </Link>
           </div>
 
           <div className="project-card">
@@ -30,13 +35,13 @@ const ProjectCard = () => {
             <p className="project-desc">
               Een webapp die het actuele weer toont via een API
             </p>
-            <button className="details-btn">Details</button>
+            <Link to="/projects/weerapp">
+              <button className="details-btn">Details</button>
+            </Link>
           </div>
-
         </div>
       </section>
 
-      {/* --- Lijn tussen secties --- */}
       <div className="divider"></div>
 
       {/* === PROJECTEN 2025 - 2026 === */}
@@ -44,13 +49,14 @@ const ProjectCard = () => {
         <h2 className="projects-title">Projecten ‘25 - ‘26</h2>
 
         <div className="projects-grid">
-
           <div className="project-card">
             <h3 className="project-title">AI Chatbot</h3>
             <p className="project-desc">
               Een chatbot die vragen beantwoordt met OpenAI API
             </p>
-            <button className="details-btn">Details</button>
+            <Link to="/projects/ai-chatbot">
+              <button className="details-btn">Details</button>
+            </Link>
           </div>
 
           <div className="project-card">
@@ -58,7 +64,9 @@ const ProjectCard = () => {
             <p className="project-desc">
               Een app om taken te plannen en deadlines te beheren
             </p>
-            <button className="details-btn">Details</button>
+            <Link to="/projects/task-manager">
+              <button className="details-btn">Details</button>
+            </Link>
           </div>
 
           <div className="project-card">
@@ -66,9 +74,10 @@ const ProjectCard = () => {
             <p className="project-desc">
               Een webshop met login, productbeheer en betalingssysteem
             </p>
-            <button className="details-btn">Details</button>
+            <Link to="/projects/ecommerce">
+              <button className="details-btn">Details</button>
+            </Link>
           </div>
-
         </div>
       </section>
     </>
