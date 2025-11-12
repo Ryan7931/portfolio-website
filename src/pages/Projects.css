@@ -97,11 +97,13 @@
   border: none;
   color: white;
   font-weight: bold;
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 2rem;
   border-radius: 0.8rem;
   cursor: pointer;
   align-self: center;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  font-size: 3rem;
+  font-family: BBH sans bogle;
 }
 
 .details-btn:hover {

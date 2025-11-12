@@ -51,7 +51,7 @@
 }
 
 .navbar-link:hover {
-  background: linear-gradient(90deg, #7B7A7A 0%, #2862EA 100%);
+  background: linear-gradient(90deg, #7B7A7A 0%, #7F1BAD 100%);
   transform: translateY(-3px);
 }
 
@@ -93,7 +93,7 @@
 }
 
 .nav-links li a:hover {
-  background: linear-gradient(90deg, #7B7A7A 0%, #2862EA 100%);
+  background: linear-gradient(90deg, #7B7A7A 0%, #7F1BAD 100%);
   transform: translateY(-3px);
 }
 
