@@ -1,0 +1,45 @@
+.about-container {
+  display: flex; /* Zet de tekst en afbeelding naast elkaar */
+  align-items: center; /* Verticaal centreren */
+  justify-content: space-between; /* Ruimte tussen tekst en afbeelding */
+  padding: 5vh 4vw;
+  gap: 3rem; /* Ruimte tussen tekst en afbeelding */
+  font-size: 3rem;
+  color: azure;
+  font-family: BBH sans Bartle;
+  margin-top: 5vh;
+  margin-left: 4vw;
+}
+
+.AboutH1 {
+  font-size: 6rem;
+  margin-top: 0vh;
+}
+
+.AboutP {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-top: 5vh;
+}
+
+.about-text {
+  flex: 1; 
+  max-width: 50%; 
+}
+
+.AboutImage {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+.AboutImages {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  gap: 4rem;
+}
+

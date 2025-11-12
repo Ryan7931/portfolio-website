@@ -12,7 +12,7 @@ export const projects = [
     id: "portfolio",
     title: "Portfolio Website",
     desc: "Mijn persoonlijke portfolio met React en animaties",
-    year: "24-25",
+    year: "25-26",
   },
   {
     id: "weerapp",
@@ -23,10 +23,10 @@ export const projects = [
 
   // === Projecten 2025 - 2026 ===
   {
-    id: "ai-chatbot",
-    title: "AI Chatbot",
-    desc: "Een chatbot die vragen beantwoordt met OpenAI API",
-    year: "25-26",
+    id: "escape-room",
+    title: "Escape Room Game",
+    desc: "Een online escape room met meerdere puzzels en uitdagingen",
+    year: "24-25",
   },
   {
     id: "task-manager",
