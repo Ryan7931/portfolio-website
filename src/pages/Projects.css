@@ -152,7 +152,7 @@
 }
 
 .project-detail-image {
-  max-width: 500px;
+  max-width: 900px;
   width: 100%;
   border-radius: 1rem;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
@@ -166,7 +166,7 @@
 
 .project-detail-desc {
   max-width: 800px;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   line-height: 1.6;
   margin-bottom: 2rem;
 }

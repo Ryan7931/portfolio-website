@@ -1,7 +1,7 @@
 // src/components/ProjectCard.jsx
 import '../pages/Projects.css';
 import { Link } from 'react-router-dom';
-import { projects } from '../data/projects.js';
+import { projects } from '../data/projects.js;';
 
 const ProjectCard = () => {
   const projects2425 = projects.filter(p => p.year === '24-25');

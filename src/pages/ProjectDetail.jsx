@@ -2,6 +2,8 @@
 import { useParams, Link } from 'react-router-dom';
 import { projects } from '../data/Projects.js';
 import './Projects.css'; // gebruik dezelfde styling als Projecten
+// Gebruik geen vaste import voor een afbeelding hier -- elk project heeft
+// zijn eigen `image`-veld in `src/data/projects.js`.
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -23,6 +25,15 @@ const ProjectDetail = () => {
       <div className="project-detail">
         <h1 className="project-detail-title">{project.title}</h1>
         <p className="project-detail-desc">{project.desc}</p>
+        {/* Gebruik preferentieel `detailImage`, anders fallback naar `image` */}
+        { (project.detailImage || project.image) && (
+          <img
+            src={project.detailImage || project.image}
+            alt={project.title}
+            className="project-detail-image"
+            loading="lazy"
+          />
+        )}
         <Link to="/projecten" className="details-btn">← Terug naar projecten</Link>
       </div>
     </main>
