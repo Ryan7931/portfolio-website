@@ -15,9 +15,9 @@ const ProjectCard = () => {
           {projects2425.map(project => (
             <div className="project-card" key={project.id}>
               <h3 className="project-title">{project.title}</h3>
-              <p className="project-desc">{project.desc}</p>
+              {/* clickable thumbnail links to project details */}
               <Link to={`/project/${project.id}`}>
-                <button className="details-btn">Details</button>
+                <img src={project.image} alt={project.title} className="project-thumb" />
               </Link>
             </div>
           ))}
@@ -32,9 +32,8 @@ const ProjectCard = () => {
           {projects2526.map(project => (
             <div className="project-card" key={project.id}>
               <h3 className="project-title">{project.title}</h3>
-              <p className="project-desc">{project.desc}</p>
               <Link to={`/project/${project.id}`}>
-                <button className="details-btn">Details</button>
+                <img src={project.image} alt={project.title} className="project-thumb" />
               </Link>
             </div>
           ))}
