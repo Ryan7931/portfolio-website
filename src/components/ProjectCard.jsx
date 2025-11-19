@@ -1,7 +1,6 @@
-// src/components/ProjectCard.jsx
 import '../pages/Projects.css';
 import { Link } from 'react-router-dom';
-import { projects } from '../data/projects.js;';
+import { projects } from '../data/projects.js';
 
 const ProjectCard = () => {
   const projects2425 = projects.filter(p => p.year === '24-25');
@@ -15,7 +14,6 @@ const ProjectCard = () => {
           {projects2425.map(project => (
             <div className="project-card" key={project.id}>
               <h3 className="project-title">{project.title}</h3>
-              {/* clickable thumbnail links to project details */}
               <Link to={`/project/${project.id}`}>
                 <img src={project.image} alt={project.title} className="project-thumb" />
               </Link>

@@ -7,7 +7,6 @@ const Contact = () => {
         <h2 className="section-title">Contact</h2>
         
         <div className="contact-content">
-          {/* Contact Formulier */}
           <div className="contact-form-section">
             <h3>Stuur een bericht</h3>
             <form className="contact-form">
@@ -37,7 +36,6 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* CV Download */}
           <div className="cv-section">
             <h3>Download CV</h3>
             <p>Bekijk mijn ervaring en skills</p>
@@ -46,7 +44,6 @@ const Contact = () => {
             </button>
           </div>
 
-          {/* Social Media Links */}
           <div className="social-section">
             <h3>Volg mij</h3>
             <div className="social-links">

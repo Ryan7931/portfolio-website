@@ -1,12 +1,11 @@
 .about-container {
-  display: flex; /* Zet de tekst en afbeelding naast elkaar */
-  align-items: center; /* Verticaal centreren */
-  justify-content: space-between; /* Ruimte tussen tekst en afbeelding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
   padding: 5vh 4vw;
-  gap: 3rem; /* Ruimte tussen tekst en afbeelding */
+  gap: 3rem; 
   font-size: 3rem;
   color: azure;
-  font-family: BBH sans Bartle;
   margin-top: 5vh;
   margin-left: 4vw;
 }
@@ -14,14 +13,21 @@
 .AboutH1 {
   font-size: 6rem;
   margin-top: 0vh;
+  font-family: BBH sans bartle;
 }
 
 .AboutP {
   font-size: 2rem;
   line-height: 1.6;
   margin-top: 5vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;;
+  font-weight: bold;
 }
 
+
+span {
+  color: #7d0dd6;
+}
 .about-text {
   flex: 1; 
   max-width: 50%; 

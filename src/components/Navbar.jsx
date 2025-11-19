@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
+    <>
     <nav className="navbar">
       <div className="nav-brand">
         <Link to="/">
@@ -23,6 +24,8 @@ const Navbar = () => {
         <Link className="navbar-link" to="/contact">CONTACT</Link>
       </div>
     </nav>
+    <Outlet />
+    </>
   );
 };
 

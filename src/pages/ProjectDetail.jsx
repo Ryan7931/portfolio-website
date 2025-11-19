@@ -1,14 +1,11 @@
 // src/pages/ProjectDetail.jsx
 import { useParams, Link } from 'react-router-dom';
-import { projects } from '../data/Projects.js';
-import './Projects.css'; // gebruik dezelfde styling als Projecten
-// Gebruik geen vaste import voor een afbeelding hier -- elk project heeft
-// zijn eigen `image`-veld in `src/data/projects.js`.
+import { projects } from '../data/projects.js';
+import './Projects.css'; 
 
 const ProjectDetail = () => {
   const { id } = useParams();
 
-  // Zoek het juiste project op basis van de URL
   const project = projects.find((p) => p.id === id);
 
   if (!project) {
@@ -25,7 +22,7 @@ const ProjectDetail = () => {
       <div className="project-detail">
         <h1 className="project-detail-title">{project.title}</h1>
         <p className="project-detail-desc">{project.desc}</p>
-        {/* Gebruik preferentieel `detailImage`, anders fallback naar `image` */}
+
         { (project.detailImage || project.image) && (
           <img
             src={project.detailImage || project.image}
@@ -33,6 +30,16 @@ const ProjectDetail = () => {
             className="project-detail-image"
             loading="lazy"
           />
+        )}
+        {project.repo && (
+          <a
+            href={project.repo}
+            className="repo-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Bekijk op GitHub
+          </a>
         )}
         <Link to="/projecten" className="details-btn">← Terug naar projecten</Link>
       </div>

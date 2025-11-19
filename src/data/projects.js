@@ -13,6 +13,7 @@ export const projects = [
     year: "24-25",
     image: RocketBoost1,
     detailImage: RocketBoost2,
+    repo: "https://github.com/TechniekCollegeRotterdam/k0788-jr24-25-Ryan7931",
   },
   {
     id: "portfolio",
@@ -21,6 +22,7 @@ export const projects = [
     year: "25-26",
     image: profiel,
     detailImage: grand1,
+    repo: "https://github.com/Ryan7931/portfolio-website",
   },
   {
     id: "escape-room",
@@ -29,5 +31,6 @@ export const projects = [
     year: "24-25",
     image: EscapeRoom,
     detailImage: EscapeRoom,
+    repo: "https://github.com/TechniekCollegeRotterdam/project-escape-room-project-escape-room-rj",
   },
 ];

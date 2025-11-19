@@ -1,19 +1,19 @@
 .contact {
-  padding: 100px 40px;  /* Meer padding voor grotere vakken */
-  margin: 2rem;         /* Minder margin zodat het meer scherm vult */
-  min-height: 80vh;     /* Zorgt dat sectie minimaal 80% van schermhoogte inneemt */
+  padding: 100px 40px;  
+  margin: 2rem; 
+  min-height: 80vh;
 }
 
 .contact-container {
-  max-width: 1400px;    /* Breedere container voor meer schermgebruik */
+  max-width: 1400px;
   margin: 0 auto;
-  width: 95%;           /* Neemt 95% van beschikbare breedte in */
+  width: 95%; 
 }
 
 .section-title {
   text-align: center;
-  font-size: 3rem;      /* Grotere titel */
-  margin-bottom: 60px;  /* Meer ruimte onder titel */
+  font-size: 3rem;    
+  margin-bottom: 60px; 
   color: azure;
   font-family: BBH sans Bartle;
 }
@@ -21,52 +21,51 @@
 .contact-content {
   display: flex;
   flex-direction: column;
-  gap: 50px;           /* Meer ruimte tussen secties */
+  gap: 50px;     
 }
 
-/* Form Styling - GROTER GEMAAKT */
 .contact-form-section {
   background: #7242C3;
-  padding: 50px;       /* Meer padding voor groter vak */
-  border-radius: 15px; /* Iets grotere border radius */
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15); /* Diepere shadow voor meer diepte */
-  min-height: 500px;   /* Minimale hoogte voor formulier */
+  padding: 50px;       
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  min-height: 500px; 
 }
 
 .contact-form-section h3 {
-  margin-bottom: 30px; /* Meer ruimte onder titel */
-  color: azure;        /* Azure kleur zoals andere titels */
-  font-size: 1.8rem;   /* Grotere titel */
+  margin-bottom: 30px; 
+  color: azure;    
+  font-size: 1.8rem;   
   text-align: center;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;          /* Meer ruimte tussen formulier elementen */
+  gap: 20px;          
 }
 
 .form-input, .form-textarea {
-  padding: 16px;      /* Grotere padding voor inputs */
+  padding: 16px;      
   border: 1px solid #ddd;
-  border-radius: 8px; /* Iets grotere border radius */
-  font-size: 1.1rem;  /* Grotere tekst */
-  width: 100%;        /* Zorgt dat inputs volledige breedte nemen */
+  border-radius: 8px; 
+  font-size: 1.1rem; 
+  width: 100%;    
 }
 
 .form-textarea {
   resize: vertical;
   font-family: inherit;
-  min-height: 150px;  /* Grotere textarea */
+  min-height: 150px;  
 }
 
 .submit-btn {
-  padding: 16px 40px; /* Grotere knop */
+  padding: 16px 40px; 
   background: azure;
   color: black;
   border: none;
   border-radius: 8px;
-  font-size: 1.1rem;  /* Grotere tekst */
+  font-size: 1.1rem; 
   cursor: pointer;
   transition: background 0.3s;
   margin-top: 10px;
@@ -76,38 +75,37 @@
   background: #a185d1;
 }
 
-/* CV Section - GROTER GEMAAKT */
 .cv-section {
   background: #7242C3;
-  padding: 40px;      /* Meer padding */
+  padding: 40px;      
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   text-align: center;
-  min-height: 250px;  /* Grotere minimale hoogte */
+  min-height: 250px;  
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centreert content verticaal */
+  justify-content: center; 
 }
 
 .cv-section h3 {
-  margin-bottom: 20px; /* Meer ruimte */
+  margin-bottom: 20px;
   color: azure;
-  font-size: 1.8rem;   /* Grotere titel */
+  font-size: 1.8rem; 
 }
 
 .cv-section p {
-  margin-bottom: 30px; /* Meer ruimte */
+  margin-bottom: 30px; 
   color: azure;
-  font-size: 1.1rem;   /* Grotere tekst */
+  font-size: 1.1rem;  
 }
 
 .cv-btn {
-  padding: 16px 35px; /* Grotere knop */
+  padding: 16px 35px; 
   background: #28a745;
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 1.1rem;  /* Grotere tekst */
+  font-size: 1.1rem;  
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -116,44 +114,43 @@
   background: #1e7e34;
 }
 
-/* Social Section - GROTER GEMAAKT */
 .social-section {
   background: #7242C3;
-  padding: 40px;      /* Meer padding */
+  padding: 40px;      
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   text-align: center;
-  min-height: 250px;  /* Grotere minimale hoogte */
+  min-height: 250px; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centreert content verticaal */
+  justify-content: center; 
 }
 
 .social-section h3 {
-  margin-bottom: 30px; /* Meer ruimte */
+  margin-bottom: 30px; 
   color: azure;
-  font-size: 1.8rem;   /* Grotere titel */
+  font-size: 1.8rem;  
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;          /* Meer ruimte tussen links */
+  gap: 20px;       
   flex-wrap: wrap;
 }
 
 .social-link {
-  padding: 12px 25px; /* Grotere social links */
+  padding: 12px 25px; 
   border-radius: 25px;
   text-decoration: none;
   color: white;
   font-weight: 500;
   transition: transform 0.3s;
-  font-size: 1.1rem;  /* Grotere tekst */
+  font-size: 1.1rem;  
 }
 
 .social-link:hover {
-  transform: translateY(-3px); /* Meer beweging bij hover */
+  transform: translateY(-3px); 
 }
 
 .tiktok {
@@ -168,13 +165,12 @@
   background: #0077B5;
 }
 
-/* Responsive - Aangepast voor grotere schermen */
 @media (min-width: 768px) {
   .contact-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 40px;        /* Meer ruimte tussen grid items */
-    min-height: 600px; /* Zorgt voor consistente hoogte */
+    gap: 40px;        
+    min-height: 600px; 
   }
   
   .contact-form-section {
@@ -187,7 +183,6 @@
   }
 }
 
-/* Extra large screens - Nog grotere vakken */
 @media (min-width: 1200px) {
   .contact-container {
     max-width: 1600px;
