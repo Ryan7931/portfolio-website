@@ -4,6 +4,8 @@ import profiel from '../assets/profiel.JPG';
 import RocketBoost1 from '../assets/RocketBoost1.png';
 import RocketBoost2 from '../assets/RocketBoost2.png';
 import EscapeRoom from '../assets/EscapeRoom.png';
+import MagnetMayhem from '../assets/MagnetMayhemIngame.png';
+import MagnetMayhem2 from '../assets/MagnetMayhemThumbnail.png';
 
 export const projects = [
   {
@@ -33,5 +35,13 @@ export const projects = [
     detailImage: EscapeRoom,
     repo: "https://github.com/TechniekCollegeRotterdam/project-escape-room-project-escape-room-rj",
   },
-  
+  {
+    id: "magnet-mayhem",
+    title: "Magnet Mayhem",
+    desc: "Een game waarin je metalen blokken moet ontwijken terwijl je een magnetisch veld om je heen hebt. Dit veld wisselt om de 10 seconden van plus-pool naar min-pool, waardoor je soms wordt aangetrokken en soms afgestoten. Het doel is om zo lang mogelijk te overleven en een hoge score te behalen.",
+    year: "25-26",
+    image: MagnetMayhem,
+    detailImage: MagnetMayhem2,
+    repo: "https://www.roblox.com/games/128202264312814/Magnet-Mayhem",
+  },
 ];
