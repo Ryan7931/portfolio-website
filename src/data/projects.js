@@ -1,11 +1,11 @@
-import grand1 from '../assets/GrandCanyon.jpg';
-import grand2 from '../assets/GrandCanyon2.JPG';
-import profiel from '../assets/profiel.JPG';
-import RocketBoost1 from '../assets/RocketBoost1.png';
-import RocketBoost2 from '../assets/RocketBoost2.png';
-import EscapeRoom from '../assets/EscapeRoom.png';
-import MagnetMayhem from '../assets/MagnetMayhemIngame.png';
-import MagnetMayhem2 from '../assets/MagnetMayhemThumbnail.png';
+import grand1 from "../assets/GrandCanyon.jpg";
+import grand2 from "../assets/GrandCanyon2.JPG";
+import profiel from "../assets/profiel.JPG";
+import RocketBoost1 from "../assets/RocketBoost1.png";
+import RocketBoost2 from "../assets/RocketBoost2.png";
+import EscapeRoom from "../assets/EscapeRoom.png";
+import MagnetMayhem from "../assets/MagnetMayhemIngame.png";
+import MagnetMayhem2 from "../assets/MagnetMayhemThumbnail.png";
 
 export const projects = [
   {
@@ -43,5 +43,23 @@ export const projects = [
     image: MagnetMayhem,
     detailImage: MagnetMayhem2,
     repo: "https://www.roblox.com/games/128202264312814/Magnet-Mayhem",
+  },
+  {
+    id: "ritouch",
+    title: "Ritouch",
+    desc: "Een website speciaal ontwikkeld voor een bedrijf dat zich richt op ademwerk en ontspanning. De website biedt informatie over de diensten van het bedrijf, zoals ademhalingsoefeningen en vertelt over de voordelen van ademwerk. Daarnaast vertelt de website het verhaal van de oprichter en biedt het een contactformulier voor geïnteresseerden om in contact te komen met het bedrijf.",
+    year: "25-26",
+    image: ritouch,
+    detailImage: ritouch2,
+    repo: "https://www.ritouch.nl",
+  },
+  {
+    id: "aerospot",
+    title: "AeroSpot",
+    desc: "Een webapplicatie die gebruikers vliegtuigen laat spotten en hierdoor punten te verdienen. Gebruikers kunnen ook strijden met anderen om wie de meeste punten / vliegtuigen gespot heeft. De app houd ook bij hoeveel vliegtuigen de gebruiker gespot heeft en hoe zeldzaam deze waren. Daarnaast werkt het ook door middel van accounts dus iedereen heeft eigen progressie.",
+    year: "25-26",
+    image: aerospot,
+    detailImage: aerospot2,
+    repo: null,
   },
 ];
