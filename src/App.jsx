@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter basename='/portfolio-website/'>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="App">
 
         <Routes>

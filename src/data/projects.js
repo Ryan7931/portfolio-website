@@ -6,6 +6,10 @@ import RocketBoost2 from "../assets/RocketBoost2.png";
 import EscapeRoom from "../assets/EscapeRoom.png";
 import MagnetMayhem from "../assets/MagnetMayhemIngame.png";
 import MagnetMayhem2 from "../assets/MagnetMayhemThumbnail.png";
+import ritouch from "../assets/ritouch.png";
+import ritouch2 from "../assets/ritouch2.png";
+import aerospot from "../assets/aerospot.png";
+import aerospot2 from "../assets/aerospot2.png";
 
 export const projects = [
   {
